@@ -42,7 +42,7 @@ if validate(start_date) and validate(end_date) :
     rows = []
     tr = []
     for i in wjdata:
-        tr = [i["sha"],i["commit"]["author"]["name"],i["commit"]["author"]["email"],i["commit"]["author"]["date"]],i["commit"]["message"]
+        tr = [i["sha"],i["commit"]["author"]["name"],i["commit"]["author"]["email"],i["commit"]["author"]["date"],i["commit"]["message"]]
         rows.append(tr)
     fields = ['commit id', 'Name', 'Email', 'Date', 'CommitMessage']
     filename ="gitreport.csv"
